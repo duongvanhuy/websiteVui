@@ -2584,6 +2584,8 @@ ul {
     bottom: 0px;
     padding: 20px;
     max-width: 300px;
+    display: none;
+}
   }
   /* line 91, /Applications/MAMP/htdocs/palash/cl/july 2019/191 Lifeleck Blog/191 Lifeleck Blog html/sass/_banner.scss */
   .banner_post .banner_post_1 .banner_post_iner h2 {
