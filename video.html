@@ -20,6 +20,8 @@
     <link rel="stylesheet" href="css/search.css">
     <!-- style CSS -->
     <link rel="stylesheet" href="css/style.css">
+    <!-- video CSS -->
+    <link rel="stylesheet" href="css/video.css">
 </head>
 
 <body>
@@ -29,7 +31,7 @@
             <div class="row align-items-center">
                 <div class="col-lg-12">
                     <nav class="navbar navbar-expand-lg navbar-light">
-                        <!-- <a class="navbar-brand" href="index.html"> <img src="img/treTrau/logo.png" alt="logo" > </a> -->
+                        <!-- <a class="navbar-brand" href="index.html"> <img src="img/logo.png" alt="logo"> </a> -->
                         <a class="navbar-brand" href="treTrauXomChu.html"> <img src="img/treTrau/logo.png" alt="logo" > </a>
                         <button class="navbar-toggler" type="button" data-toggle="collapse"
                             data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
@@ -41,17 +43,16 @@
                             id="navbarSupportedContent">
                             <ul class="navbar-nav">
                                 <li class="nav-item active">
-                                    <!-- <a class="nav-link" href="index.html">Home</a> -->
-                                    <a class="nav-link" href="treTrauXomChu.html">Home</a>
+                                    <a class="nav-link" href="index.html">Home</a>
                                 </li>
                                 <li class="nav-item">
-                                    <a class="nav-link" href="archive.html">Video</a>
+                                    <a class="nav-link" href="archive.html">Archive</a>
                                 </li>
                                 <li class="nav-item">
-                                    <a class="nav-link" href="category.html"> Event</a>
+                                    <a class="nav-link" href="category.html"> Category</a>
                                 </li>
                                 <li class="nav-item">
-                                    <a class="nav-link" href="contact.html">Picture</a>
+                                    <a class="nav-link" href="contact.html">Contact</a>
                                 </li>
                                 <li class="nav-item dropdown">
                                     <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
@@ -86,64 +87,46 @@
     </header>
     <!-- Header part end-->
 
-    <!-- banner post start-->
-    <section class="banner_post">
-        <div class="container-fluid">
-            <div class="row justify-content-between">
-                <div class="banner_post_1 banner_post_bg_1">
-                    <div class="banner_post_iner text-center">
-                        <a href="category.html"><h5> Fashion / Life style</h5></a> 
-                        <a href="single-blog.html"><h2>Cô giáo chưa lấy chồng</h2></a> 
-                        <p>Posted on April 15, 2019</p>
-                    </div>
-                </div><div class="banner_post_1 banner_post_bg_2">
-                    <div class="banner_post_iner text-center">
-                        <a href="category.html"><h5> Fashion / Life style</h5></a> 
-                        <a href="single-blog.html"><h2>Người đàn ông thành lập nhóm</h2></a> 
-                        <p>Posted on April 15, 2019</p>
+    <!-- breadcrumb start-->
+    <!-- <section class="breadcrumb breadcrumb_bg align-items-center">
+        <div class="container">
+            <div class="row align-items-center justify-content-between">
+                <div class="col-sm-6">
+                    <div class="breadcrumb_tittle text-left">
+                        <h2>Post Archive</h2>
                     </div>
                 </div>
-                <div class="banner_post_1 banner_post_bg_3">
-                    <div class="banner_post_iner text-center">
-                        <a href="category.html"><h5> Fashion / Life style</h5></a> 
-                        <a href="single-blog.html"><h2>Cô nàng nhí nhảnh</h2></a> 
-                        <p>Posted on April 15, 2019</p>
+                <div class="col-sm-6">
+                    <div class="breadcrumb_content text-right">
+                        <p>Home<span>/</span>Post Archive</p>
                     </div>
                 </div>
             </div>
         </div>
-    </section>
-    <!-- banner post end-->
+    </section> -->
+    <div class="backgroundVideo">
 
-    <!-- subscribe form start-->
-    <div class="subscribe_form padding_top margin_top">
-        <div class="container">
-            <div class="row ">
-                <div class="col-lg-12">
-                    <div class="subscribe_form_iner">
-                        <form>
-                            <div class="form-row align-items-center justify-content-center">
-                                <div class="col-md-12 col-lg-3">
-                                <h3>Subscribe
-                                        Our Newsletter</h3>
-                                </div>
-                                <div class="col-12 col-sm-6 col-md-4 col-lg-3">
-                                <input type="text" class="form-control" placeholder="Your name">
-                                </div>
-                                <div class="col-12 col-sm-6 col-md-4 col-lg-3">
-                                <input type="text" class="form-control" placeholder="Your email">
-                                </div>
-                                <div class="col-12 col-sm-6 col-md-4 col-lg-3">
-                                    <a href="#" class="btn_1">Subscribe</a>
-                                </div>
-                            </div>
-                        </form>
-                    </div>
-                </div>
+        <!-- This div is  intentionally blank. It creates the transparent black overlay over the video which you can modify in the CSS -->
+        <div class="overlay"></div>
+      
+        <!-- The HTML5 video element that will create the background video on the header -->
+        <video playsinline="playsinline" autoplay="autoplay" muted="muted" loop="loop">
+          <source src="video/caffe.mp4" type="video/mp4">
+        </video>
+      
+        <!-- The header content -->
+        <div class="container h-100">
+          <div class="d-flex h-100 text-center align-items-center">
+            <div class="w-100 text-white">
+              <h1 class="display-3">Video short</h1>
+              <p class="lead mb-0">Xin cái caption</p>
             </div>
+          </div>
         </div>
     </div>
-    <!-- subscribe form end-->
+   
+   
+    <!-- breadcrumb start-->
 
     <!-- feature_post start-->
     <section class="all_post section_padding">
@@ -154,69 +137,31 @@
                         <div class="col-lg-12">
                             <div class="single_post post_1 feature_post">
                                 <div class="single_post_img">
-                                    <img src="img/treTrau/full.jpg" alt="">
-                                </div>
-                                <div class="single_post_text text-center">
-                                    <a href="category.html"><h5> Bức ảnh đầy đủ thành viên</h5></a> 
-                                    <a href="single-blog.html"><h2>Bức ảnh nói lên tất cả</h2></a> 
-                                    <p>Posted on April 15, 2019</p>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="col-lg-6 col-sm-6">
-                            <div class="single_post post_1">
-                                <div class="single_post_img">
-                                    <img src="img/treTrau/QuayTuan01.jpg" alt="">
+                                    <video playsinline="playsinline" autoplay="autoplay" muted="muted" loop="loop">
+                                        <source src="video/cafer.mp4" type="video/mp4">
+                                      </video>
                                 </div>
                                 <div class="single_post_text text-center">
                                     <a href="category.html"><h5> Fashion / Life style</h5></a> 
-                                    <a href="single-blog.html"><h2>Cu Tuấn</h2></a> 
-                                    <p>Posted on April 15, 2021</p>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="col-lg-6 col-sm-6">
-                                <div class="single_post post_1">
-                                    <div class="single_post_img">
-                                        <img src="img/treTrau/tet01.jpg" alt="">
-                                    </div>
-                                    <div class="single_post_text text-center">
-                                        <a href="category.html"><h5> Fashion / Life style</h5></a> 
-                                        <a href="single-blog.html"><h2>Lần thứ 2 đến Đà Nẵng</h2></a> 
-                                        <p>Posted on April 15, 2019</p>
-                                    </div>
-                                </div>
-                        </div>
-                        <div class="col-lg-6 col-sm-6">
-                            <div class="single_post post_1">
-                                <div class="single_post_img">
-                                    <img src="img/treTrau/be02.jpg" alt="">
-                                </div>
-                                <div class="single_post_text text-center">
-                                    <a href="https://www.facebook.com/be.ems.39"><h5> Fashion / Life style</h5></a> 
-                                    <a href="single-blog.html"><h2>Your life is a product your
-                                            right decisions</h2></a> 
+                                    <a href="single-blog.html"><h2>All said replenish years void kind say void </h2></a> 
                                     <p>Posted on April 15, 2019</p>
                                 </div>
                             </div>
                         </div>
                         <div class="col-lg-6 col-sm-6">
-                                <div class="single_post post_1">
-                                    <div class="single_post_img">
-                                        <img src="img/treTrau/dang01.jpg" alt="">
-                                    </div>
-                                    <div class="single_post_text text-center">
-                                        <a href="category.html"><h5> Fashion / Life style</h5></a> 
-                                        <a href="single-blog.html"><h2>Chả nhận ra ai đây cả</h2></a> 
-                                        <p>Posted on April 15, 2019</p>
-                                    </div>
-                                </div>
-                        </div>
-                        <div class="col-lg-6 col-sm-6">
                             <div class="single_post post_1">
-                                <div class="single_post_img">
-                                    <img src="img/treTrau/ha01.jpg" alt="">
-                                </div>
+                                <!-- <div class="single_post_img">
+                                    
+                                    <video playsinline="playsinline" autoplay="autoplay" muted="muted" loop="loop">
+                                        <source src="video/anMiTom.mp4" type="video/mp4">
+                                      </video>
+                                </div> -->
+
+                                <div class="ratio ratio-1x1">
+                                    <video playsinline="playsinline" autoplay="autoplay" muted="muted" loop="loop">
+                                        <source src="video/anMiTom.mp4" type="video/mp4">
+                                      </video>
+                                  </div>
                                 <div class="single_post_text text-center">
                                     <a href="category.html"><h5> Fashion / Life style</h5></a> 
                                     <a href="single-blog.html"><h2>Your life is a product your
@@ -227,8 +172,66 @@
                         </div>
                         <div class="col-lg-6 col-sm-6">
                                 <div class="single_post post_1">
+                                    <div class="ratio ratio-1x1">
+                                        <video playsinline="playsinline" autoplay="autoplay" muted="muted" loop="loop">
+                                            <source src="video/chaySo.mp4" type="video/mp4">
+                                          </video>
+                                      </div>
+                                    <div class="single_post_text text-center">
+                                        <a href="category.html"><h5> Fashion / Life style</h5></a> 
+                                        <a href="single-blog.html"><h2>Your life is a product your
+                                                right decisions</h2></a> 
+                                        <p>Posted on April 15, 2019</p>
+                                    </div>
+                                </div>
+                        </div>
+                        <div class="col-lg-6 col-sm-6">
+                            <div class="single_post post_1">
+                                <div class="ratio ratio-1x1">
+                                    <video playsinline="playsinline" autoplay="autoplay" muted="muted" loop="loop">
+                                        <source src="video/Quan_Birthday.mp4" type="video/mp4">
+                                      </video>
+                                  </div>
+                                <div class="single_post_text text-center">
+                                    <a href="category.html"><h5> Fashion / Life style</h5></a> 
+                                    <a href="single-blog.html"><h2>Your life is a product your
+                                            right decisions</h2></a> 
+                                    <p>Posted on April 15, 2019</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-lg-6 col-sm-6">
+                                <div class="single_post post_1">
+                                    <div class="ratio ratio-1x1">
+                                        <video playsinline="playsinline" autoplay="autoplay" muted="muted" loop="loop">
+                                            <source src="video/trenDuongDiPN.mp4" type="video/mp4">
+                                          </video>
+                                      </div>
+                                    <div class="single_post_text text-center">
+                                        <a href="category.html"><h5> Fashion / Life style</h5></a> 
+                                        <a href="single-blog.html"><h2>Your life is a product your
+                                                right decisions</h2></a> 
+                                        <p>Posted on April 15, 2019</p>
+                                    </div>
+                                </div>
+                        </div>
+                        <div class="col-lg-6 col-sm-6">
+                            <div class="single_post post_1">
+                                <div class="single_post_img">
+                                    <img src="img/post/post_22.png" alt="">
+                                </div>
+                                <div class="single_post_text text-center">
+                                    <a href="category.html"><h5> Fashion / Life style</h5></a> 
+                                    <a href="single-blog.html"><h2>Your life is a product your
+                                            right decisions</h2></a> 
+                                    <p>Posted on April 15, 2019</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-lg-6 col-sm-6">
+                                <div class="single_post post_1">
                                     <div class="single_post_img">
-                                        <img src="img/treTrau/Livan01.jpg" alt="">
+                                        <img src="img/post/post_23.png" alt="">
                                     </div>
                                     <div class="single_post_text text-center">
                                         <a href="category.html"><h5> Fashion / Life style</h5></a> 
@@ -241,7 +244,7 @@
                         <div class="col-lg-6 col-sm-6">
                             <div class="single_post post_1">
                                 <div class="single_post_img">
-                                    <img src="img/treTrau/lep01.jpg" alt="">
+                                    <img src="img/post/post_24.png" alt="">
                                 </div>
                                 <div class="single_post_text text-center">
                                     <a href="category.html"><h5> Fashion / Life style</h5></a> 
@@ -254,7 +257,7 @@
                         <div class="col-lg-6 col-sm-6">
                                 <div class="single_post post_1">
                                     <div class="single_post_img">
-                                        <img src="img/treTrau/MeoHong.jpg" alt="">
+                                        <img src="img/post/post_25.png" alt="">
                                     </div>
                                     <div class="single_post_text text-center">
                                         <a href="category.html"><h5> Fashion / Life style</h5></a> 
@@ -264,33 +267,6 @@
                                     </div>
                                 </div>
                         </div>
-                        <div class="col-lg-6 col-sm-6">
-                            <div class="single_post post_1">
-                                <div class="single_post_img">
-                                    <img src="img/treTrau/QuanL01.jpg" alt="">
-                                </div>
-                                <div class="single_post_text text-center">
-                                    <a href="category.html"><h5> Fashion / Life style</h5></a> 
-                                    <a href="single-blog.html"><h2>Your life is a product your
-                                            right decisions</h2></a> 
-                                    <p>Posted on April 15, 2019</p>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="col-lg-6 col-sm-6">
-                                <div class="single_post post_1">
-                                    <div class="single_post_img">
-                                        <img src="img/treTrau/tet02.jpg" alt="">
-                                    </div>
-                                    <div class="single_post_text text-center">
-                                        <a href="category.html"><h5> Fashion / Life style</h5></a> 
-                                        <a href="single-blog.html"><h2>Your life is a product your
-                                                right decisions</h2></a> 
-                                        <p>Posted on April 15, 2019</p>
-                                    </div>
-                                </div>
-                        </div>
-                        
                     </div>
                     <div class="page_pageniation">
                         <nav aria-label="Page navigation example">
@@ -340,7 +316,7 @@
                             </div>
                             <div class="single_catagory_post post_2 ">
                                 <div class="category_post_img">
-                                    <img src="img/treTrau/event/nghiaVu01.jpg" alt="">
+                                    <img src="img/sidebar/sidebar_1.png" alt="">
                                 </div>
                                 <div class="post_text_1 pr_30">
                                     <a href="single-blog.html">
@@ -405,8 +381,7 @@
                     <div class="social_connect">
                     <div class="single-social_connect">
                         <div class="social_connect_img">
-                            <!-- <img src="img/treTrau/diHT.jpg" class="" alt="blog"> -->
-                            <img src="img/treTrau/diHT.jpg" class="img-thumbnail" alt="...">
+                            <img src="img/insta/instagram_1.png" class="" alt="blog">
                             <div class="social_connect_overlay">
                                 <a href="#"><span class="ti-instagram"></span></a> 
                             </div>
@@ -414,10 +389,7 @@
                     </div>
                     <div class="single-social_connect">
                         <div class="social_connect_img">
-                            <!-- <img src="img/treTrau/chuaDG.jpg" class="" alt="blog"> -->
-                            <!-- <img src="img/treTrau/chuaDG.jpg" class="rounded" alt="..."> -->
-                            <img src="img/treTrau/chuaDG.jpg" class="img-fluid" alt="...">
-
+                            <img src="img/insta/instagram_2.png" class="" alt="blog">
                             <div class="social_connect_overlay">
                                 <a href="#"><span class="ti-instagram"></span></a> 
                             </div>
@@ -525,6 +497,8 @@
 		</div>
 	</footer>
     <!-- footer part end-->
+
+    <!-- jquery plugins here-->
     <!-- jquery -->
     <script src="js/jquery-1.12.1.min.js"></script>
     <!-- popper js -->
